@@ -1,0 +1,36 @@
+
+.App {
+  /*text-align: center;*/
+}
+
+.Grid
+{
+  background: ivory;
+
+}
+
+.Cell
+{
+  width: 80px;
+  height: 80px;  
+  min-width: 80px;
+  min-height: 80px;
+  vertical-align: middle;
+  text-align: right;
+  border: thin solid gray;
+  padding: .25em;
+  font-family: monospace;
+  font-size: 24px;
+  margin: 0;
+}
+
+.Cell:hover
+{
+  border: 2px solid red;
+}
+
+.Cell-active
+{
+  border: 2px solid black;
+
+}

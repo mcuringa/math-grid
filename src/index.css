@@ -1,0 +1,13 @@
+html
+{
+  background: black;
+}
+body 
+{
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+
+}
+
+table, tr, td { margin: 0; padding: 0; }

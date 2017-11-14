@@ -1,0 +1,36 @@
+{
+  "name": "math-grid",
+  "version": "1.0.0",
+  "description": "A tool for helping kids organize math problems.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcuringa/math-grid.git"
+  },
+  "keywords": [],
+  "author": "mxc, loretod",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/mcuringa/math-grid/issues"
+  },
+  "homepage": "https://github.com/mcuringa/math-grid#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-scripts": "^1.0.17"
+  }
+}
