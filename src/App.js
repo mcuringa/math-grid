@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import _ from 'lodash';
+
+
+const numCells = 48;
 
 class App extends Component {
   render() {
@@ -16,10 +19,19 @@ class App extends Component {
 
 class Grid extends Component
 {
+
   constructor(props)
   {
     super(props);
+    let cells = _.map(new Array(numCells),(c,i)=>{ 
+      return {
+        id: i+1, 
+        isActive: false,
+        val: ""
+      }});
+    
   }
+
   render()
   {
     return (
@@ -63,8 +75,13 @@ class Cell extends Component
     this.row = props.row;
     this.col = props.col;
 
-    this.state = {val: props.val || "", isActive: false};
+    this.state = {
+      val: props.val || "", 
+      isActive: false,
+      cssClass: "Cell"
+    };
     this.handleClick = this.handleClick.bind(this);
+    this.handleKey = this.handleKey.bind(this);
   }
 
   handleClick() 
@@ -72,19 +89,16 @@ class Cell extends Component
     console.log("clicked");
     //broadcast deactivate...
     this.setState(prevState => ({
-      isActive: true
+      isActive: true,
+      cssClass: "Cell Cell-active"
     }));
   }
 
-  activeClass()
-  {
-    if(this.state.isActive)
-      return "Cell Cell-active";
-    return "Cell";
-  }
 
-  handleKey() 
+  handleKey(e) 
   {
+    console.log(e.charCode);
+    console.log(String.fromCharCode(e.charCode));
 
   }
 
@@ -92,7 +106,8 @@ class Cell extends Component
   render()
   {
     return (
-      <td className={this.activeClass()} onClick={this.handleClick}>
+      <td className={this.state.cssClass} 
+        onClick={this.handleClick} onKeyPress={this.handleKey}>
         {this.state.val}
       </td>
     );
@@ -100,18 +115,4 @@ class Cell extends Component
 
 }
 
-
-// const synth = window.speechSynthesis;
-
-// function say(text, lang="en-GB", pitch=1, rate=1)
-// {
-//   var u = new SpeechSynthesisUtterance(text);
-//   u.lang = lang;
-//   u.pitch = pitch;
-//   u.rate = rate;
-//   synth.speak( u );
-
-// }
-
-// say("Hello kids. You don't want to shut me down, do you?")
 export default App;
