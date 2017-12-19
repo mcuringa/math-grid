@@ -1,0 +1,18 @@
+$bg-color: black;
+
+.dark
+{
+  background: $bg-color;
+}
+
+body 
+{
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  background: blue;
+
+}
+
+table, tr, td { margin: 0; padding: 0; }
+
