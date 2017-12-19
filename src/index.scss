@@ -1,6 +1,8 @@
+$bg-color: black;
+
 html
 {
-  background: black;
+  background: $bg-color;
 }
 body 
 {
