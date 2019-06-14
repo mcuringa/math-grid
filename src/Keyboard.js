@@ -4,7 +4,7 @@ import './Keyboard.css';
 
 function Keyboard(props) {
   const nums = "0123456789".split("");
-  const signs = "+−×÷_".split("");
+  const signs = "=+−×÷_".split("");
   const makeKey = (char, i) => <Key key={i} char={char} keyPress={props.keyPress} />
   return (
     <div className="Keyboard p-3 bg-light">
