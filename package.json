@@ -1,36 +1,31 @@
 {
-  "name": "math-grid",
-  "version": "1.0.0",
-  "description": "A tool for helping kids organize math problems.",
-  "main": "index.js",
+  "name": "mathgrid",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5",
+    "lodash": "4.17.11",
+    "bootstrap": "4.3.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mcuringa/math-grid.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [],
-  "author": "mxc, loretod",
-  "license": "AGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/mcuringa/math-grid/issues"
-  },
-  "homepage": "https://github.com/mcuringa/math-grid#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "webpack": "^3.8.1"
-  },
-  "dependencies": {
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
-    "react-scripts": "^1.0.17"
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "main": "index.js",
+  "author": "mxc",
+  "license": "AGPL-3.0-or-later",
+  "description": ""
 }
