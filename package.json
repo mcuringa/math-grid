@@ -10,14 +10,25 @@
     "bootstrap": "4.3.1"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+=======
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+>>>>>>> f343ae45882f66b7db9c1fe8eb6f0dac3dd2632e
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+<<<<<<< HEAD
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -28,4 +39,25 @@
   "author": "mxc",
   "license": "AGPL-3.0-or-later",
   "description": ""
+=======
+  "homepage": "https://github.com/mcuringa/math-grid#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-scripts": "^1.0.17",
+    "style-loader": "^0.19.1",
+    "webpack-dev-middleware": "^2.0.2",
+    "webpack-hot-middleware": "^2.21.0"
+  }
+>>>>>>> f343ae45882f66b7db9c1fe8eb6f0dac3dd2632e
 }

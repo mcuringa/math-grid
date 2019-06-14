@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# generated css files
+src/**/*.css
+
+# generated output
+build
