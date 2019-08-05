@@ -29,9 +29,5 @@
   "main": "index.js",
   "author": "mxc",
   "license": "AGPL-3.0-or-later",
-  "description": "",
-  "devDependencies": {
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
-  }
+  "description": ""
 }
